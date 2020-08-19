@@ -1,0 +1,23 @@
+$brandFont: 'din-2014', sans-serif;
+
+html {
+    font-size: calc(1.5vw + 10px);
+	line-height: 1.5;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: $brandFont;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $brandFont;
+    font-weight: 400;
+}

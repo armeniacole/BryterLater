@@ -179,8 +179,58 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+html {
+  font-size: calc(1.5vw + 10px);
+  line-height: 1.5;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: "din-2014", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "din-2014", sans-serif;
+  font-weight: 400;
+}
+
 .logo {
-  width: 60%;
+  width: 55%;
   display: block;
-  margin: -30px auto 0;
+  margin: 50px auto 0;
+}
+
+.info-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.info h2 {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.soon {
+  width: 30%;
+  display: block;
+  margin: 0px 50px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
