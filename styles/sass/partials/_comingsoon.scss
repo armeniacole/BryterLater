@@ -1,27 +1,115 @@
-.logo {
-    width: 55%;
-    display: block;
-    margin: 50px auto 0;
-}
-
-.info-container {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.info h2 {
-    text-align: center;
-    font-size: 0.8rem;
-}
-
-.soon {
+.logoOne {
     width: 30%;
     display: block;
-    margin: 0px 50px;
+    margin: 50px auto 0;
+
+    @media(max-width: 950px){
+           margin-top: 70px;
+    }
+
+    @media(max-width: 750px){
+        width: 40%;
+    }
+
+    @media(max-width: 450px){
+        display: none;
+    }
 }
 
-.flex {
+.logoTwo {
+    display: none;
+
+    @media(max-width: 450px){
+        display: block;
+        width: 50%;
+        margin: 50px auto 0;
+    }
+}
+
+.info {
+    text-align: center;
+
+    h2 {
+       letter-spacing: 0.2rem;
+       font-size: 1rem;
+       margin-top: 20px;
+
+       @media(max-width: 950px){
+           margin-top: 70px;
+       }
+
+       @media(max-width: 750px){
+           font-size: 1.2rem;
+        }
+
+        @media(max-width: 450px){
+            margin-top: 30px;
+        }
+
+    }
+
+    p {
+        font-size: 0.8rem;
+
+        @media(max-width: 750px){
+           font-size: 1rem;
+        }
+    }
+}
+
+.contact {
     display: flex;
-    flex-direction: row-reverse;
-    align-content: space-between;
+    width: 20%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+
+    a {
+        text-decoration: none;
+        align-self: center;
+        
+        @media(max-width: 450px){
+            padding: 15px;
+        }
+    }
+
+    @media(max-width: 750px){
+        font-size: 1rem;
+        width: 30%;
+    }
+
+    @media(max-width: 450px){
+        width: 45%;
+
+    }
+
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    max-width: 100vw;
+    overflow: hidden;
+
+    img {
+        width: 100vw;
+        margin-bottom: -12px;
+
+        @media(max-width: 1050px) {
+            width: 120vw;
+            margin-left: -50px;
+
+        }
+        @media(max-width: 950px) {
+            width: 140vw;
+            margin-left: -150px;
+        }
+
+        @media(max-width: 450px){
+            width: 250vw;
+            margin-left: -300px;
+        }
+    }
+    
 }
