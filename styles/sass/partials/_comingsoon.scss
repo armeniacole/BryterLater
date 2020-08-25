@@ -7,7 +7,7 @@
            margin-top: 70px;
     }
 
-    @media(max-width: 750px){
+    @media(max-width: 770px){
         width: 40%;
     }
 
@@ -38,7 +38,7 @@
            margin-top: 70px;
        }
 
-       @media(max-width: 750px){
+       @media(max-width: 770px){
            font-size: 1.2rem;
         }
 
@@ -51,17 +51,18 @@
     p {
         font-size: 0.8rem;
 
-        @media(max-width: 750px){
+        @media(max-width: 770px){
            font-size: 1rem;
         }
     }
 }
 
 .contact {
-    display: flex;
-    width: 20%;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    width: 30%;
     margin: 0 auto;
-    justify-content: space-evenly;
+
     font-size: 0.8rem;
 
     a {
@@ -73,7 +74,16 @@
         }
     }
 
-    @media(max-width: 750px){
+    .insta {
+        justify-self: end;
+    }
+
+    p {
+        align-self: center;
+        justify-self: center;
+    }
+
+    @media(max-width: 770px){
         font-size: 1rem;
         width: 30%;
     }

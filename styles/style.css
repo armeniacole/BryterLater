@@ -231,7 +231,7 @@ a:focus {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   .logoOne {
     width: 40%;
   }
@@ -271,7 +271,7 @@ a:focus {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   .info h2 {
     font-size: 1.2rem;
   }
@@ -287,21 +287,19 @@ a:focus {
   font-size: 0.8rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   .info p {
     font-size: 1rem;
   }
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 20%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 20% 40%;
+      grid-template-columns: 40% 20% 40%;
+  width: 30%;
   margin: 0 auto;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   font-size: 0.8rem;
 }
 
@@ -318,7 +316,20 @@ a:focus {
   }
 }
 
-@media (max-width: 750px) {
+.contact .insta {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.contact p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media (max-width: 770px) {
   .contact {
     font-size: 1rem;
     width: 30%;
