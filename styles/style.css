@@ -381,7 +381,7 @@ footer img {
   }
   .logoTwo {
     display: block;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
   }
   .landscape {
@@ -395,13 +395,13 @@ footer img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 35px 20px;
+    margin: 20px 20px;
   }
   .info h2 {
-    margin-top: 0px;
+    margin: 0px;
   }
   .info p {
-    margin-bottom: 0px;
+    margin: 0px;
   }
   .contact {
     width: 40%;
