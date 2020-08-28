@@ -374,3 +374,39 @@ footer img {
     margin-left: -300px;
   }
 }
+
+@media (max-width: 815px) and (max-height: 420px) {
+  .logoOne {
+    display: none;
+  }
+  .logoTwo {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .landscape {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 35px 20px;
+  }
+  .info h2 {
+    margin-top: 0px;
+  }
+  .info p {
+    margin-bottom: 0px;
+  }
+  .contact {
+    width: 40%;
+  }
+  .contact a {
+    padding: 15px;
+  }
+}
