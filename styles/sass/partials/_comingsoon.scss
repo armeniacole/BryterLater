@@ -167,9 +167,9 @@ footer {
 
 }
 
-@media (max-width:1300px) and (max-height: 660px) {
+@media (max-width:1370px) and (max-height: 660px) {
     .logoOne {
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .info {
         p {
@@ -178,6 +178,7 @@ footer {
 
         h2 {
             margin-top: 0px;
+            margin-bottom:0px;
         }
     }
 }
