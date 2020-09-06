@@ -411,9 +411,15 @@ footer img {
   }
 }
 
+@media (min-height: 900px) {
+  .logoOne {
+    width: 40%;
+  }
+}
+
 @media (max-width: 1370px) and (max-height: 660px) {
   .logoOne {
-    margin-top: 30px;
+    margin-top: 40px;
   }
   .info p {
     margin: 0px;
