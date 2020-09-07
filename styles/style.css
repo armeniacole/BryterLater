@@ -184,6 +184,10 @@ html {
   line-height: 1.5;
 }
 
+body {
+  background-color: #fbf6ea;
+}
+
 .wrapper {
   width: 95%;
   max-width: 1200px;
@@ -194,43 +198,234 @@ h1, h2, h3 {
   font-family: "din-2014", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  color: #58585a;
 }
 
-p {
+p, a {
   font-family: "din-2014", sans-serif;
   font-weight: 400;
+  color: #58585a;
 }
 
-.logo {
-  width: 55%;
+a {
+  border: 2px solid transparent;
+}
+
+a:hover {
+  border-bottom: 2px solid #58585a;
+}
+
+a:focus {
+  border: 2px solid #58585a;
+}
+
+.logoOne {
+  width: 30%;
   display: block;
   margin: 50px auto 0;
 }
 
-.info-container {
-  width: 60%;
-  margin: 0 auto;
+@media (max-width: 950px) {
+  .logoOne {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 770px) {
+  .logoOne {
+    width: 40%;
+  }
+}
+
+@media (max-width: 450px) {
+  .logoOne {
+    display: none;
+  }
+}
+
+.logoTwo {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .logoTwo {
+    display: block;
+    width: 50%;
+    margin: 50px auto 0;
+  }
+}
+
+.info {
+  text-align: center;
 }
 
 .info h2 {
-  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 950px) {
+  .info h2 {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 770px) {
+  .info h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .info h2 {
+    margin-top: 20px;
+  }
+}
+
+.info p {
   font-size: 0.8rem;
 }
 
-.soon {
-  width: 30%;
-  display: block;
-  margin: 0px 50px;
+@media (max-width: 770px) {
+  .info p {
+    font-size: 1rem;
+  }
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 20% 40%;
+      grid-template-columns: 40% 20% 40%;
+  width: 30%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+.contact a {
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 450px) {
+  .contact a {
+    padding: 15px;
+  }
+}
+
+.contact .insta {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.contact p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media (max-width: 770px) {
+  .contact {
+    font-size: 1rem;
+    width: 30%;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact {
+    width: 45%;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+footer img {
+  width: 100vw;
+  margin-bottom: -12px;
+}
+
+@media (max-width: 1050px) {
+  footer img {
+    width: 120vw;
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 950px) {
+  footer img {
+    width: 140vw;
+    margin-left: -150px;
+  }
+}
+
+@media (max-width: 450px) {
+  footer img {
+    width: 250vw;
+    margin-left: -300px;
+  }
+}
+
+@media (max-width: 815px) and (max-height: 420px) {
+  .logoOne {
+    display: none;
+  }
+  .logoTwo {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .landscape {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 20px;
+  }
+  .info h2 {
+    margin: 0px;
+  }
+  .info p {
+    margin: 0px;
+  }
+  .contact {
+    width: 40%;
+  }
+  .contact a {
+    padding: 15px;
+  }
+}
+
+@media (min-height: 900px) {
+  .logoOne {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1370px) and (max-height: 660px) {
+  .logoOne {
+    margin-top: 40px;
+  }
+  .info p {
+    margin: 0px;
+  }
+  .info h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }

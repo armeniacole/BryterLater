@@ -1,8 +1,16 @@
+
 $brandFont: 'din-2014', sans-serif;
+
+$background: #fbf6ea;
+$black: #58585a;
 
 html {
     font-size: calc(1.5vw + 10px);
 	line-height: 1.5;
+}
+
+body {
+    background-color: $background;
 }
 
 .wrapper {
@@ -15,9 +23,23 @@ h1, h2, h3 {
     font-family: $brandFont;
     font-weight: 700;
     text-transform: uppercase;
+    color: $black;
 }
 
-p {
+p, a {
     font-family: $brandFont;
     font-weight: 400;
+    color: $black;
+}
+
+a {
+    border: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid $black;
+    }
+
+    &:focus {
+        border: 2px solid $black;
+    }
 }
